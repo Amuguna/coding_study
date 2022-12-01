@@ -1,5 +1,4 @@
 #include <iostream>  //전처리 지시자
-
 using namespace std; 
 
 int main(){

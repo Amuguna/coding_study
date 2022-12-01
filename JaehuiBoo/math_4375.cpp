@@ -1,5 +1,4 @@
 #include <iostream>  //전처리 지시자
-#include <string>
 
 using namespace std; 
 
@@ -11,6 +10,7 @@ int main(){
     {
         int remain = 1;
         int num = 1;
+        if (in)
         while(true){
             if(remain%in==0)
                 break;
@@ -19,8 +19,7 @@ int main(){
                 num++;
             }
         }
-        cout << num << endl;
+        cout << num << '\n';
     }
     return 0;
-
 }
