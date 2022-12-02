@@ -8,7 +8,6 @@ using namespace std;
 // 백만 이하의 모든 짝수에 대해서, 이 추측을 검증하는 프로그램을 작성하시오. 
 
 int in;
-int i = 0;
 vector <int> odds;
 
 void input(){
