@@ -30,6 +30,7 @@ void solution(){
         if(!found)
             odds.push_back(i);
     }
+    
     //odds 에는 min보다 작은 소수들이 들어있다. 
     for(int i = 0; i<odds.size();i++)
     {
