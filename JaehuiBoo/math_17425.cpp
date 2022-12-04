@@ -4,35 +4,25 @@ using namespace std;
 
 int t;
 int in;
-vector<long> resultF;
-vector<long> resultG;
+long resultF[1000001];
+long resultG[1000001];
 
 //f(y)는 자연수 y의 모든 약수를 더한 값.
 //x보다 작거나 같은 모든 자연수 y의 f(y)값을 더한 값은 g(x)로 표현.
 //n이 주어졌을 때 g(n)??
 
-void solutionF(){
-    resultF.push_back(1);
-    for(int i = 2;i<=1000000;i++){
-        long result = 0;
-        for(int k = 1; k<=i;k++)
-        {
-            if(i%k==0)
-            {
-                result+=k;
-            }
+void solutionF(){ //배수 이용해서 누적합 
+    for(int i = 1;i<=1000000;i++)
+    {
+        for(int k = i; k<=1000000;k+=i){
+            resultF[k]+=i;
         }
-        cout << i << endl;
-        //cout << result << endl;
-        resultF.push_back(result);
     }
-    cout << "after "<<endl;
 }
 
 void solutionG(){
-    resultG.push_back(1);
     for(int i = 1;i<=1000000;i++){
-        resultG.push_back(resultG[i-1]+resultF[i]);
+        resultG[i] = resultG[i-1]+resultF[i];
     }
 }
 
@@ -43,7 +33,7 @@ int main(){
     cin >> t;
     for(int i = 0; i<t;i++){
         cin >> in;
-        cout << resultG[in-1] << '\n';
+        cout << resultG[in] << '\n';
     }
     return 0;
 }
