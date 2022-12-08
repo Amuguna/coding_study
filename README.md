@@ -8,3 +8,4 @@
 |12.1|2609, 17425|https://www.acmicpc.net/problem/2609, https://www.acmicpc.net/problem/17425|
 |12.4|2309, 1759|https://www.acmicpc.net/problem/2309, https://www.acmicpc.net/problem/1759|
 |12.6|2193|https://www.acmicpc.net/problem/2193|
+|12.7|1309|https://www.acmicpc.net/problem/1309|
