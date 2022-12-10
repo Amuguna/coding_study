@@ -8,6 +8,7 @@ using namespace std;
 int in;
 
 void input(){
+    cin >> in;
 }
 
 void solution(){
