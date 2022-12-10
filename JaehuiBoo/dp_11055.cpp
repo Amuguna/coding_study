@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 // 수열 a에서 증가 부분 수열 중에서 합이 가장 큰 것을 구하는 프로그램
@@ -21,25 +22,21 @@ void input(){
     }
 }
 
-
 void solution(){
-    for (int i = 0; i<n;i++){
+    dp.push_back(in[0]);
+    for (int i = 1; i<n;i++){
         dp.push_back(in[i]);
-        if(i!=0){
-            m=0;
-            for(int k = i-1; k>=0; k--)
+        m=0;
+        for(int k = i-1; k>=0; k--)
+        {
+            if(in[k]<in[i] && dp[k]>m)
             {
-                if(in[k]<in[i] && dp[k]>m)
-                {
-                    m = dp[k];
-                }
+                m = dp[k];
             }
-            dp[i] +=m;
         }
+        dp[i] +=m;
     }
     cout << *max_element(dp.begin(),dp.end()) << '\n';
-
-
 }
 
 int main(){
