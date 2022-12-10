@@ -10,4 +10,4 @@
 |12.6|2193|https://www.acmicpc.net/problem/2193|
 |12.7|1309|https://www.acmicpc.net/problem/1309|
 |12.9|14501|https://www.acmicpc.net/problem/14501|
-|12.10|11055|https://www.acmicpc.net/problem/11055|
+|12.10|11055, 2156|https://www.acmicpc.net/problem/11055, https://www.acmicpc.net/problem/2156|
