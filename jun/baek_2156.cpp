@@ -1,9 +1,11 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+
 int dp[10001];
 int wine[10001];
 int N;
+
 void input() {
   cin >> N;
   for(int i=1;i<=N;i++) {
