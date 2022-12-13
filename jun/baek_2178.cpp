@@ -31,7 +31,7 @@ void bfs(int x, int y) {
         for (int i = 0; i < 4; i++) {
             int next_x = x + x_dir[i];
             int next_y = y + y_dir[i];
-            //������ ����� ���
+            //out of bound
             if (x < 0 || y < 0 || x >= N || y >= M)
                 continue;
             if (map[next_x][next_y] == 1 && visited[next_x][next_y] == 0) {
