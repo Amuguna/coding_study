@@ -2,9 +2,9 @@
 #include <queue>
 #include <string>
 using namespace std;
-int map[100][100];
-int visited[100][100];
-int dist[100][100];
+int map[101][101];
+int visited[101][101];
+int dist[101][101];
 int x_dir[4] = { 1, 0, -1, 0 };
 int y_dir[4] = { 0, 1, 0,-1 };
 int N, M;
@@ -31,7 +31,7 @@ void bfs(int x, int y) {
         for (int i = 0; i < 4; i++) {
             int next_x = x + x_dir[i];
             int next_y = y + y_dir[i];
-            //¹üÀ§¸¦ ¹þ¾î³ª´Â °æ¿ì
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î³ªï¿½ï¿½ ï¿½ï¿½ï¿½
             if (x < 0 || y < 0 || x >= N || y >= M)
                 continue;
             if (map[next_x][next_y] == 1 && visited[next_x][next_y] == 0) {
