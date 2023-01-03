@@ -13,3 +13,4 @@
 |12.10|11055, 2156|https://www.acmicpc.net/problem/11055, https://www.acmicpc.net/problem/2156|
 |12.12|10845, 2178|https://www.acmicpc.net/problem/10845, https://www.acmicpc.net/problem/2178|
 |1.2|7562|https://www.acmicpc.net/problem/7562|
+|1.3|13549|https://www.acmicpc.net/problem/13549|
